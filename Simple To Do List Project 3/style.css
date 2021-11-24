@@ -1,0 +1,150 @@
+
+
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #3a6186, #89253e);
+  
+}
+
+.div-container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 10rem 7rem;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  
+}
+
+.div-container h1{
+  margin-bottom: 5rem;
+  font-family: 'Quantico', sans-serif;
+  color: white;
+  
+}
+
+#new-task {
+padding: 30px 20px;
+background: rgba(0, 0, 0, 0.4);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+backdrop-filter: blur(0.5px);
+border-radius: 10px;
+  
+  
+}
+
+
+
+#new-task input {
+position: relative;
+width: 70%;
+height: 3rem;  
+padding: .75rem;
+font-size: 1rem;
+font-family: 'Quantico', sans-serif;   
+font-weight: 500;
+background-color: transparent;
+border: 2px solid #d7d2cc;
+color: white;
+}
+
+#new-task input:focus {
+  outline: none;
+  border-color: #89253e;
+  
+}
+
+::placeholder {
+color: white;
+}
+ 
+#add-btn {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Quantico', sans-serif;   
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  
+}
+
+#add-btn:hover {
+  background-color: #89253e;
+  color: white;
+  
+}
+
+#task-list {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+  margin-top: 3.8rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border-bottom: 2px solid #d7d2cc;
+  cursor: pointer; 
+}
+
+#taskname{
+width: 70%;
+height: 3rem;  
+padding: .75rem;
+font-size: 1rem;
+font-family: 'Quantico', sans-serif;   
+font-weight: 500;
+color: white;
+  
+}
+
+.delete{
+  width: 15%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;  
+  background-color: transparent;
+}
+
+
+.delete i {
+  font-size: 1.2rem;
+   
+}
+
+.delete i:hover {
+  transform: scale(1.3)
+  
+}
